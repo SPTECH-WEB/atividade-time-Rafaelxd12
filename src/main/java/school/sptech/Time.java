@@ -34,8 +34,10 @@ public class Time {
 
         if (aproveitamento > adversarioAproveitamento){
             System.out.println("O time "+nome+" tem um aproveitamento maior que o time "+adversario.nome+".");
-        } else {
+        } else if (aproveitamento < adversarioAproveitamento){
             System.out.println("O time "+adversario.nome+" tem um aproveitamento maior que o time "+nome+".");
+        } else {
+            System.out.println("Os dois times tem o mesmo aproveiramento.");
         }
     }
 
